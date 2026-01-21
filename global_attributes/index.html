@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Global Attributes Demo</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="main-header"
+            class="site-header"
+            title="Website Header"
+            style="background:#f4f4f4; padding:10px;"
+            data-role="header">
+
+        <h1 accesskey="h">Global Attributes Demo</h1>
+        <p spellcheck="true">This page demonstrates many HTML elements.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="navigation"
+         class="nav-bar"
+         tabindex="0"
+         title="Main Navigation">
+
+        <a href="#" accesskey="1">Home</a> |
+        <a href="#" accesskey="2">About</a> |
+        <a href="#" accesskey="3">Contact</a>
+    </nav>
+
+    <!-- Main -->
+    <main id="content" class="main-content">
+
+        <!-- Section -->
+        <section id="intro"
+                 class="section"
+                 contenteditable="true"
+                 title="Editable Section">
+            <h2>Editable Section</h2>
+            <p>You can edit this text directly in the browser.</p>
+        </section>
+
+        <!-- Article -->
+        <article id="article-1"
+                 class="post"
+                 draggable="true"
+                 title="Draggable Article"
+                 data-post-id="101">
+            <h3>Draggable Article</h3>
+            <p>Try dragging this article.</p>
+        </article>
+
+        <!-- Aside -->
+        <aside id="sidebar"
+               class="side-info"
+               dir="rtl"
+               lang="ar"
+               title="Sidebar in Arabic direction">
+            <p>هذا نص جانبي باتجاه من اليمين إلى اليسار</p>
+        </aside>
+
+        <!-- Figure -->
+        <figure id="image-figure"
+                class="media"
+                translate="no">
+            <img src="https://via.placeholder.com/300"
+                 alt="Placeholder image">
+            <figcaption>Image caption (not translated)</figcaption>
+        </figure>
+
+        <!-- Form -->
+        <form id="contact-form"
+              class="form"
+              data-form-type="contact">
+
+            <label for="name">Name:</label>
+            <input id="name"
+                   type="text"
+                   tabindex="1"
+                   required>
+
+            <button type="submit"
+                    tabindex="2"
+                    title="Submit Button">
+                Submit
+            </button>
+        </form>
+
+        <!-- Hidden Element -->
+        <p hidden>This text is hidden using the hidden attribute.</p>
+
+        <!-- Details -->
+        <details id="info"
+                 class="info-box">
+            <summary>More Info</summary>
+            <p>This content is inside a details element.</p>
+        </details>
+
+        <!-- Inert Section -->
+        <section inert
+                 title="Inactive Section">
+            <p>This section is inert (not interactive).</p>
+        </section>
+
+        <!-- Slot & Part (advanced / Shadow DOM related) -->
+        <div slot="example-slot"
+             part="example-part"
+             title="Advanced global attributes">
+            Slot and part attributes example
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="site-footer"
+            class="footer"
+            nonce="abc123"
+            style="margin-top:20px;">
+        <address>
+            Created by <strong>Mohamed Mohamed</strong><br>
+            <a href="mailto:test@example.com">test@example.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>
